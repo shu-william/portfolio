@@ -4,7 +4,7 @@ import './Navbar.scss';
 import LogoS from '../../assets/images/logo-s.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faHome, faUser } from "@fortawesome/free-solid-svg-icons";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Navbar = () => {
   return (
@@ -27,6 +27,11 @@ const Navbar = () => {
         <li>
           <a href="https://www.linkedin.com/in/williamshu8/" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/shu-william" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
           </a>
         </li>
       </ul>
