@@ -1,11 +1,17 @@
 import React from 'react';
 import "./AnimatedLetters.scss";
 
-const AnimatedLetters = () => {
+const AnimatedLetters = ({ letterClass, strArray, idx }) => {
   return (
-    <div>
-
-    </div>
+    <span>
+      {
+        strArray.map((char, i) => (
+          <span key={char + i} className={`${letterClass} _${i + idx}`}>
+            {char}
+          </span>
+        ))
+      }
+    </span>
   )
 }
 
